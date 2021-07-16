@@ -1,14 +1,17 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-a{
+
+a {
     color: #1f9bcf;
-    &:hover{
+
+    &:hover {
         color: #333;
     }
 }
-body{
+
+body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
@@ -37,7 +40,7 @@ header {
                 margin-left: 10px;
 
                 a {
-                   
+
                     font-size: 18px;
 
                 }
@@ -50,7 +53,8 @@ main {
     padding: 15px 20px;
     overflow: hidden;
     clear: both;
-    .page-title{
+
+    .page-title {
         border-bottom: 1px solid #e5e5e5;
         text-align: center;
         margin-bottom: 40px;
@@ -64,11 +68,14 @@ main {
             padding: 0 20px;
 
             .blog-item {
-                border-bottom: 1px solid #e5e5e5;;
+                border-bottom: 1px solid #e5e5e5;
+                ;
                 padding-bottom: 15px;
-                margin-bottom:  25px;
+                margin-bottom: 25px;
+
                 h2 {
-                    margin-bottom: 15px;;
+                    margin-bottom: 15px;
+                    ;
                 }
 
                 .date {
@@ -76,10 +83,11 @@ main {
                 }
 
                 p {}
-                &:last-child{
+
+                &:last-child {
                     border-bottom: 0;
                 }
-               
+
             }
         }
 
@@ -95,7 +103,7 @@ main {
             // float: left;
             overflow: hidden;
             clear: both;
-            padding:15px 20px;
+            padding: 15px 20px;
             border-bottom: 1px solid #333;
             margin-bottom: 0px;
 
@@ -103,17 +111,20 @@ main {
             h2 {}
 
             ul {
-                padding:0;
-                margin:0;
+                padding: 0;
+                margin: 0;
+
                 li {
-                    list-style:none;
+                    list-style: none;
+
                     a {
                         margin-bottom: 5px;
                         display: block;
                     }
                 }
             }
-            &:last-child{
+
+            &:last-child {
                 border-bottom: 0;
             }
         }
@@ -125,6 +136,7 @@ footer {
     overflow: hidden;
     clear: both;
     background: #e5e5e5;
+
     .footer-top {
         overflow: hidden;
         clear: both;
@@ -133,10 +145,12 @@ footer {
             width: 25%;
             float: left;
             overflow: hidden;
+
             .widget-inner {
                 padding-left: 10px;
                 padding-right: 10px;
                 overflow: hidden;
+
                 h2 {
                     border-bottom: 1px solid #202124;
                     padding-bottom: 15px;
@@ -146,9 +160,11 @@ footer {
                 ul {
                     padding: 0;
                     margin: 0;
+
                     li {
-                        list-style:none;
+                        list-style: none;
                         padding: 0;
+
                         a {
                             margin-bottom: 5px;
                             display: block;
@@ -169,48 +185,54 @@ footer {
 
 
 
-.container{
-    margin:0 auto;
+.container {
+    margin: 0 auto;
     width: 100%;
 }
 
 
 
-  @media (min-width: 576px) {
+@media (min-width: 576px) {
     .container {
         max-width: 540px;
+
         main {
-            .content-wrap{
+            .content-wrap {
                 width: 100%;
                 float: none;
             }
-            .sidebar{
+
+            .sidebar {
                 width: 100%;
                 float: none;
             }
-    
+
         }
-        footer{
-            .footer-top{
-                .footer-widget{
+
+        footer {
+            .footer-top {
+                .footer-widget {
                     width: 100%;
                     margin-top: 20px;
                 }
-    
+
             }
         }
     }
 }
+
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
     }
 }
+
 @media (min-width: 992px) {
     .container {
         max-width: 960px;
     }
 }
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
@@ -220,25 +242,27 @@ footer {
 
 
 
- @media (max-width: 767px) {
-        main {
-            .content-wrap{
-                width: 100%;
-                float: none;
-            }
-            .sidebar{
-                width: 100%;
-                float: none;
-            }
-    
+@media (max-width: 767px) {
+    main {
+        .content-wrap {
+            width: 100%;
+            float: none;
         }
-        footer{
-            .footer-top{
-                .footer-widget{
-                    width: 100%;
-                    margin-top: 20px;
-                }
-    
-            }
+
+        .sidebar {
+            width: 100%;
+            float: none;
         }
+
+    }
+
+    footer {
+        .footer-top {
+            .footer-widget {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+        }
+    }
 }
