@@ -1,55 +1,84 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     font-size: 2rem;
 }
-.section{
-    position: relative;
+
+.section {
+
 }
-.container{
+
+.container {
     padding: 4rem 3rem;
 }
+
 .container h2,
-.container p{
+.container p {
     margin-bottom: 1rem;
 }
-.container:hover h2{
-    color: #00194e;
+
+.bottom-arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: rotate(90deg);
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+    animation: bounch 2s infinite;
 }
-.img1, .img2, .img3, .img4{
-    width: 100%;
+
+/* The animation code */
+@keyframes bounch {
+    0% {
+        bottom: 10px;
+    }
+
+    100% {
+        bottom: 50px;
+    }
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
     height: 100vh;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
-    position: relative;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
-.img1{
+.img1 {
     background-image: url(../images/image1.jpg);
 }
-.img2{
+
+.img2 {
     background-image: url(../images/image2.jpg);
 }
-.img3{
+
+.img3 {
     background-image: url(../images/image3.jpg);
 }
-.img4{
+
+.img4 {
     background-image: url(../images/image4.jpg);
 }
-.title{
 
-   border: 2px solid #fff;
+.title {
     padding: 1rem;
     background: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
     letter-spacing: 1rem;
     text-transform: uppercase;
     color: #fff;
